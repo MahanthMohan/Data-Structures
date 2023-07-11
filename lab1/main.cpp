@@ -47,7 +47,7 @@ bool IsArrayPrimeIter(int* arr, int len) {
         }
 
         int divEnd = (int) (sqrt(n) + 1);
-        for (int j = 2; j <= divEnd; j++) {
+        for (int j = 2; j < divEnd; j++) {
             int q = n/j;
             int mod = n - q * j;
             if (!mod) {
@@ -78,9 +78,11 @@ bool IsArrayPrimeIter(int* arr, int len) {
 // Pseudocode:
 // Algorithm IsPrimeRecur(number, divisor)
 //   divEnd = sqrt(number) + 1;
-//   if (divisor <= divEnd && number is divisible by divisor)
+//   if (number < 2)
 //      return false
-//   else if (divisor > divEnd)
+//   else if (divisor < divEnd && number is divisible by divisor)
+//      return false
+//   else if (divisor >= divEnd)
 //      return true
 //   end if
 //   return IsPrimeRecur(number, divisor + 1)
@@ -89,10 +91,12 @@ bool IsPrimeRecur(int number, int divisor) {
     std::cout << "Entering " << __func__ << std::endl;
     int divEnd = (int) (sqrt(number) + 1);
     // Base cases
-    if (divisor <= divEnd && !(number % divisor)) {
+    if (number < 2) {
+        return false; 
+    } else if (divisor < divEnd && !(number % divisor)) {
         std::cout << "Leaving " << __func__ << std::endl;
         return false;
-    } else if (divisor > divEnd) {
+    } else if (divisor >= divEnd) {
         std::cout << "Leaving " << __func__ << std::endl;
         return true;
     }
@@ -145,7 +149,7 @@ bool IsArrayPrimeRecur(int* arr, int len) {
 
 int main(int argc, const char* argv[]) {
     int len;
-    std::cout << "NumInts = ";
+    std::cout << "NumInts (max size: 16) = ";
     std::string len_str;
     std::getline(std::cin, len_str);
     len = std::stoi(len_str);
@@ -192,4 +196,6 @@ int main(int argc, const char* argv[]) {
     } else {
         std::cout << "Not a Prime Array using recursion" << std::endl;
     }
+
+    delete[] arr;
 }
