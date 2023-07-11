@@ -216,4 +216,7 @@ int main(int argc, const char* argv[]) {
 
     // Cleanup
     delete[] arr;
+    
+    // delay for the program before exit, waits until enter is pressed
+    std::getline(std::cin, temp);
 }
