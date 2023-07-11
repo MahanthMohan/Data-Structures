@@ -5,9 +5,18 @@
 
 /**
  * Name: Mahanth Mohan
+ * Lab: #1
+ * This assignment involves the implementation and recursion based algorithms for finding
+ * if a sequence of integers are prime, by checking if the only factors for an integer n
+ * in the array are 1 and n. In addition, it covers the aspect of time complexity when
+ * checking divisors, running in O(sqrt(n)) time each time a factor is checked.
+*/
+
+/**
+ * Name: Mahanth Mohan
  * Class: CIS 022C
  * Section: 051Z
- * Assignment: #1
+ * Lab: #1
  * Due Date: 07/11/2023
 */
 // This algorithm iteratively checks if an array of integers are prime
@@ -67,7 +76,7 @@ bool IsArrayPrimeIter(int* arr, int len) {
  * Name: Mahanth Mohan
  * Class: CIS 022C
  * Section: 051Z
- * Assignment: #1
+ * Lab: #1
  * Due Date: 07/11/2023
 */
 // This algorithm recursively checks if a given integer n is prime,
@@ -112,7 +121,7 @@ bool IsPrimeRecur(int number, int divisor) {
  * Name: Mahanth Mohan
  * Class: CIS 022C
  * Section: 051Z
- * Assignment: #1
+ * Lab: #1
  * Due Date: 07/11/2023
 */
 // This algorithm checks if an array of integers are prime, by
