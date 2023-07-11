@@ -1,6 +1,6 @@
 #include <iostream>
+#include <cmath>
 #include <string>
-#include <chrono>
 #define SORT_MAX_SIZE 16
 
 /**
@@ -22,12 +22,13 @@
 //  i = 0
 //  loop (i < len)
 //      n = arr[i]
+//      divEnd = sqrt(n) + 1 
 //      if (n < 2)
 //          return false
 //      end if
 //
 //      j = 2
-//      loop (j < n)
+//      loop (j < divEnd)
 //          q = n/j;
 //          mod = n - q * j
 //          if (mod is 0)
@@ -45,7 +46,8 @@ bool IsArrayPrimeIter(int* arr, int len) {
             return false;
         }
 
-        for (int j = 2; j < n; j++) {
+        int divEnd = (int) (sqrt(n) + 1);
+        for (int j = 2; j <= divEnd; j++) {
             int q = n/j;
             int mod = n - q * j;
             if (!mod) {
@@ -75,23 +77,27 @@ bool IsArrayPrimeIter(int* arr, int len) {
 // Return: boolean of true or false, representing if the given integer n is prime.
 // Pseudocode:
 // Algorithm IsPrimeRecur(number, divisor)
-//   if (divisor < number && number is divisible by divisor)
+//   divEnd = sqrt(number) + 1;
+//   if (divisor <= divEnd && number is divisible by divisor)
 //      return false
-//   else if (divisor >= number)
+//   else if (divisor > divEnd)
 //      return true
 //   end if
 //   return IsPrimeRecur(number, divisor + 1)
 // end IsPrimeRecur
 bool IsPrimeRecur(int number, int divisor) {
+    std::cout << "Entering " << __func__ << std::endl;
+    int divEnd = (int) (sqrt(number) + 1);
     // Base cases
-    if (divisor < number && !(number % divisor)) {
+    if (divisor <= divEnd && !(number % divisor)) {
         std::cout << "Leaving " << __func__ << std::endl;
         return false;
-    } else if (divisor >= number) {
+    } else if (divisor > divEnd) {
         std::cout << "Leaving " << __func__ << std::endl;
         return true;
     }
 
+    std::cout << "Leaving " << __func__ << std::endl;
     // Recursive case => inc divisor until base cond is reached
     return IsPrimeRecur(number, divisor + 1);
 }
@@ -112,17 +118,19 @@ bool IsPrimeRecur(int number, int divisor) {
 // Return: boolean of true or false, representing if the given array of integers is prime.
 // Pseudocode:
 // Algorithm IsArrayPrimeRecur(arr, len)
-//   isPrime = IsPrimeRecur(arr, len)
+//   num = arr[len - 1]
+//   isPrime = IsPrimeRecur(arr, num)
 //   if (len == 0)
 //      return true
 //   else if (!isPrime)
 //      return false
 //   end if
-//   return IsArrayPrimeRecur(arr, len + 1)
+//   return IsArrayPrimeRecur(arr, len - 1)
 // end IsArrayPrimeRecur
 bool IsArrayPrimeRecur(int* arr, int len) {
-    std::cout << "Entering IsPrimeRecur" << std::endl;
-    bool isPrime = IsPrimeRecur(arr[len - 1], 2);
+    std::cout << "Entering " << __func__ << std::endl;
+    int num = arr[len - 1];
+    bool isPrime = IsPrimeRecur(num, 2);
     if (len == 0) {
         std::cout << "Leaving " << __func__ << std::endl;
         return true;
@@ -131,6 +139,7 @@ bool IsArrayPrimeRecur(int* arr, int len) {
         return false;
     } 
 
+    std::cout << "Leaving " << __func__ << std::endl;
     return IsArrayPrimeRecur(arr, len - 1); 
 }
 
@@ -166,7 +175,7 @@ int main(int argc, const char* argv[]) {
     }
 
     for (int i = 0; i < len; i++) {
-            std::cout << arr[i] << " ";
+        std::cout << arr[i] << " ";
     }
     std::cout << std::endl;
 
@@ -177,8 +186,6 @@ int main(int argc, const char* argv[]) {
         std::cout << "Not a Prime Array using iteration" << std::endl;
     }
 
-
-    std::cout << "Entering IsArrayPrimeRecur" << std::endl;
     isPrime = IsArrayPrimeRecur(arr, len);
     if (isPrime) {
         std::cout << "Prime Array using recursion" << std::endl;
