@@ -34,7 +34,9 @@
 //          if (mod is 0)
 //              return false
 //          end if
+//          j = j + 1
 //      end loop
+//      i = i + 1
 //  end loop
 // end IsArrayPrimeIter
 bool IsArrayPrimeIter(int* arr, int len) {
@@ -149,11 +151,13 @@ bool IsArrayPrimeRecur(int* arr, int len) {
 
 int main(int argc, const char* argv[]) {
     int len;
+    // Collecting user input for the size of the array
     std::cout << "NumInts (max size: 16) = ";
     std::string len_str;
     std::getline(std::cin, len_str);
     len = std::stoi(len_str);
     int* arr;
+    // Selection statement to default array to MAX_SORT_SIZE in case len > 16
     if (len > SORT_MAX_SIZE) {
         len = SORT_MAX_SIZE;
     }
@@ -164,6 +168,7 @@ int main(int argc, const char* argv[]) {
     std::cout << "Ints = ";
     std::getline(std::cin, input_data);
     int arr_idx = 0;
+    // Splitting the input by space after getline() writes to the string
     for (int i = 0; i < input_data.length(); i++) {
         char c = input_data[i];
         if (c == ' ') {
@@ -178,11 +183,13 @@ int main(int argc, const char* argv[]) {
         }
     }
 
+    // Print out the array
     for (int i = 0; i < len; i++) {
         std::cout << arr[i] << " ";
     }
     std::cout << std::endl;
 
+    // Iteration call
     bool isPrime = IsArrayPrimeIter(arr, len);
     if (isPrime) {
         std::cout << "Prime Array using iteration" << std::endl;
@@ -190,6 +197,7 @@ int main(int argc, const char* argv[]) {
         std::cout << "Not a Prime Array using iteration" << std::endl;
     }
 
+    // Recursion call
     isPrime = IsArrayPrimeRecur(arr, len);
     if (isPrime) {
         std::cout << "Prime Array using recursion" << std::endl;
@@ -197,5 +205,6 @@ int main(int argc, const char* argv[]) {
         std::cout << "Not a Prime Array using recursion" << std::endl;
     }
 
+    // Cleanup
     delete[] arr;
 }
