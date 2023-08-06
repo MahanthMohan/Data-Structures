@@ -1,0 +1,37 @@
+1) Breadth First Traversal
+57.12 Dollar 23.44 Dollar 87.43 Dollar 18.36 Dollar 44.55 Dollar 68.98 Dollar 111.22 Dollar 11.0 Dollar 20.21 Dollar 36.18 Dollar 48.48 Dollar 77.77 Dollar 101.0 Dollar 543.21 Dollar 1.0 Dollar 21.0 Dollar 51.0 Dollar 345.67 Dollar 251.0 Dollar 151.0 Dollar 
+2) Inorder Traversal
+1.0 Dollar 11.0 Dollar 18.36 Dollar 20.21 Dollar 21.0 Dollar 23.44 Dollar 36.18 Dollar 44.55 Dollar 48.48 Dollar 51.0 Dollar 57.12 Dollar 68.98 Dollar 77.77 Dollar 87.43 Dollar 101.0 Dollar 111.22 Dollar 151.0 Dollar 251.0 Dollar 345.67 Dollar 543.21 Dollar 
+3) Preorder Traversal
+57.12 Dollar 23.44 Dollar 18.36 Dollar 11.0 Dollar 1.0 Dollar 20.21 Dollar 21.0 Dollar 44.55 Dollar 36.18 Dollar 48.48 Dollar 51.0 Dollar 87.43 Dollar 68.98 Dollar 77.77 Dollar 111.22 Dollar 101.0 Dollar 543.21 Dollar 345.67 Dollar 251.0 Dollar 151.0 Dollar 
+4) Postorder Traversal
+1.0 Dollar 11.0 Dollar 21.0 Dollar 20.21 Dollar 18.36 Dollar 36.18 Dollar 51.0 Dollar 48.48 Dollar 44.55 Dollar 23.44 Dollar 77.77 Dollar 68.98 Dollar 101.0 Dollar 151.0 Dollar 251.0 Dollar 345.67 Dollar 543.21 Dollar 111.22 Dollar 87.43 Dollar 57.12 Dollar 
+Inserted node with data: 34.50 Dollar
+BST Level Order Traversal
+57.12 Dollar 23.44 Dollar 87.43 Dollar 18.36 Dollar 44.55 Dollar 68.98 Dollar 111.22 Dollar 11.0 Dollar 20.21 Dollar 36.18 Dollar 48.48 Dollar 77.77 Dollar 101.0 Dollar 543.21 Dollar 1.0 Dollar 21.0 Dollar 34.50 Dollar 51.0 Dollar 345.67 Dollar 251.0 Dollar 151.0 Dollar 
+Node with data 354.0 Dollar not found
+BST Level Order Traversal
+57.12 Dollar 23.44 Dollar 87.43 Dollar 18.36 Dollar 44.55 Dollar 68.98 Dollar 111.22 Dollar 11.0 Dollar 20.21 Dollar 36.18 Dollar 48.48 Dollar 77.77 Dollar 101.0 Dollar 543.21 Dollar 1.0 Dollar 21.0 Dollar 34.50 Dollar 51.0 Dollar 345.67 Dollar 251.0 Dollar 151.0 Dollar 
+Failed to remove node
+BST Level Order Traversal
+57.12 Dollar 23.44 Dollar 87.43 Dollar 18.36 Dollar 44.55 Dollar 68.98 Dollar 111.22 Dollar 11.0 Dollar 20.21 Dollar 36.18 Dollar 48.48 Dollar 77.77 Dollar 101.0 Dollar 543.21 Dollar 1.0 Dollar 21.0 Dollar 34.50 Dollar 51.0 Dollar 345.67 Dollar 251.0 Dollar 151.0 Dollar 
+Node removed
+BST Level Order Traversal
+57.12 Dollar 23.44 Dollar 87.43 Dollar 18.36 Dollar 44.55 Dollar 68.98 Dollar 111.22 Dollar 11.0 Dollar 20.21 Dollar 36.18 Dollar 48.48 Dollar 77.77 Dollar 101.0 Dollar 543.21 Dollar 1.0 Dollar 21.0 Dollar 34.50 Dollar 51.0 Dollar 345.67 Dollar 251.0 Dollar 
+Tree Traversal after changes: 
+1) Breadth First Traversal
+57.12 Dollar 23.44 Dollar 87.43 Dollar 18.36 Dollar 44.55 Dollar 68.98 Dollar 111.22 Dollar 11.0 Dollar 20.21 Dollar 36.18 Dollar 48.48 Dollar 77.77 Dollar 101.0 Dollar 543.21 Dollar 1.0 Dollar 21.0 Dollar 51.0 Dollar 345.67 Dollar 251.0 Dollar 151.0 Dollar 
+2) Inorder Traversal
+1.0 Dollar 11.0 Dollar 18.36 Dollar 20.21 Dollar 21.0 Dollar 23.44 Dollar 36.18 Dollar 44.55 Dollar 48.48 Dollar 51.0 Dollar 57.12 Dollar 68.98 Dollar 77.77 Dollar 87.43 Dollar 101.0 Dollar 111.22 Dollar 151.0 Dollar 251.0 Dollar 345.67 Dollar 543.21 Dollar 
+3) Preorder Traversal
+57.12 Dollar 23.44 Dollar 18.36 Dollar 11.0 Dollar 1.0 Dollar 20.21 Dollar 21.0 Dollar 44.55 Dollar 36.18 Dollar 48.48 Dollar 51.0 Dollar 87.43 Dollar 68.98 Dollar 77.77 Dollar 111.22 Dollar 101.0 Dollar 543.21 Dollar 345.67 Dollar 251.0 Dollar 151.0 Dollar 
+4) Postorder Traversal
+1.0 Dollar 11.0 Dollar 21.0 Dollar 20.21 Dollar 18.36 Dollar 36.18 Dollar 51.0 Dollar 48.48 Dollar 44.55 Dollar 23.44 Dollar 77.77 Dollar 68.98 Dollar 101.0 Dollar 151.0 Dollar 251.0 Dollar 345.67 Dollar 543.21 Dollar 111.22 Dollar 87.43 Dollar 57.12 Dollar 
+1) Breadth First Traversal
+57.12 Dollar 23.44 Dollar 87.43 Dollar 18.36 Dollar 44.55 Dollar 68.98 Dollar 111.22 Dollar 11.0 Dollar 20.21 Dollar 36.18 Dollar 48.48 Dollar 77.77 Dollar 101.0 Dollar 543.21 Dollar 1.0 Dollar 21.0 Dollar 34.50 Dollar 51.0 Dollar 345.67 Dollar 251.0 Dollar 
+2) Inorder Traversal
+1.0 Dollar 11.0 Dollar 18.36 Dollar 20.21 Dollar 21.0 Dollar 23.44 Dollar 34.50 Dollar 36.18 Dollar 44.55 Dollar 48.48 Dollar 51.0 Dollar 57.12 Dollar 68.98 Dollar 77.77 Dollar 87.43 Dollar 101.0 Dollar 111.22 Dollar 251.0 Dollar 345.67 Dollar 543.21 Dollar 
+3) Preorder Traversal
+57.12 Dollar 23.44 Dollar 18.36 Dollar 11.0 Dollar 1.0 Dollar 20.21 Dollar 21.0 Dollar 44.55 Dollar 36.18 Dollar 34.50 Dollar 48.48 Dollar 51.0 Dollar 87.43 Dollar 68.98 Dollar 77.77 Dollar 111.22 Dollar 101.0 Dollar 543.21 Dollar 345.67 Dollar 251.0 Dollar 
+4) Postorder Traversal
+1.0 Dollar 11.0 Dollar 21.0 Dollar 20.21 Dollar 18.36 Dollar 34.50 Dollar 36.18 Dollar 51.0 Dollar 48.48 Dollar 44.55 Dollar 23.44 Dollar 77.77 Dollar 68.98 Dollar 101.0 Dollar 251.0 Dollar 345.67 Dollar 543.21 Dollar 111.22 Dollar 87.43 Dollar 57.12 Dollar 

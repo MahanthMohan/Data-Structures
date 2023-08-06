@@ -35,6 +35,7 @@ int main() {
     std::string currName = "dollar";
     int foundIndex1 = linked_list->seqSearch(new Dollar("dollar", 87.43));
     int foundIndex2 = linked_list->seqSearch(new Dollar("dollar", 44.56));
+
     std::cout << "B) Search for $87.43 and $44.56" << std::endl;
     std::cout << "Found $87.43 at index " << foundIndex1 << std::endl;
     std::cout << "Found $44.56 at index " << foundIndex2 << std::endl;
